@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/crankitintro">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|center_vertical">
+
+        <Button
+            android:layout_width="254dp"
+            android:layout_height="50dp"
+            android:text="Proceed"
+            android:id="@+id/buttonProceed"
+            android:layout_gravity="center_horizontal|bottom"
+            android:gravity="center"
+            android:layout_marginBottom="100dp"
+            android:textSize="@dimen/design_navigation_icon_padding"
+            android:textStyle="bold|italic"
+            android:theme="@style/AppTheme"
+            android:typeface="sans"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#39db2a"
+            android:background="@drawable/bluethunder" />
+
+        <Button
+            android:layout_width="257dp"
+            android:layout_height="50dp"
+            android:text="Exit"
+            android:id="@+id/buttonExit"
+            android:textColor="#39db2a"
+            android:textStyle="bold|italic"
+            android:theme="@style/AppTheme"
+            android:typeface="sans"
+            android:textColorHint="#772e2e"
+            android:gravity="center"
+            android:background="@drawable/bluethunder"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/buttonProceed"
+            android:layout_alignStart="@+id/buttonProceed"
+            android:layout_marginBottom="44dp"
+            android:layout_alignRight="@+id/buttonProceed"
+            android:layout_alignEnd="@+id/buttonProceed"
+            android:layout_gravity="center_horizontal|bottom"
+            android:textSize="@dimen/design_navigation_icon_padding" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="65dp"
+            android:layout_height="57dp"
+            android:id="@+id/buttonfb"
+            android:background="@drawable/fbicon2"
+            android:layout_gravity="right|top" />
+
+        <TextView
+            android:layout_width="147dp"
+            android:layout_height="56dp"
+            android:text="Contact Us:"
+            android:id="@+id/textView"
+            android:layout_gravity="right|top"
+            android:textColor="#39db2a"
+            android:typeface="serif"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+</AbsoluteLayout>

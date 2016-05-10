@@ -1,0 +1,95 @@
+\documentclass{article}
+
+\usepackage{float}
+\usepackage{parskip}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{lipsum}
+
+\begin{document}
+	\title{\textbf{TEAM REGISTRATION APPLICATION DESIGN}}
+	\author{Vishavjeet Singh, Ankit Shubham, Raunak Lohiya}
+	\maketitle
+	
+The aim of the application \textbf{Crank!t} is to register teams to a server built by IIT faculty. 
+This app has been implemented using Ice Cream Sandwich android 4.0 SDK. We have also used Volley and Git to build this app.	
+
+
+\textbf{STARTING THE APP – Crank!t}
+	
+	
+	
+When the user taps the app icon (android icon) he/she gets \textit {a screen with our logo} (our trademark). On this screen he/she has three options either \textbf{Proceed}, \textbf{Exit} or there is a fb icon in the top right corner which forwards to Crank!t’s fb page.
+\begin{figure}[H]
+	\hspace{3cm}\includegraphics[width=50mm,height=75mm,scale=0.5]{first_screen.png}
+	\caption{Start Screen}
+\end{figure}
+
+\newpage
+\textbf{REGISTRATION SCREEN}
+
+When the user taps \textbf{Proceed} button, he will get a TeamRegistration screen with \textbf{7 fields},\textbf{ 4 buttons} and a ‘Death Note’ background.
+
+\begin{figure}[H]
+\hspace*{3cm}\includegraphics[width=50mm,height=80mm,scale=0.5]{death_note_screen.png}
+\caption{Registration Screen}
+\end{figure}
+
+The correct format of fields are:\\
+1.	Entry number must be of 11 characters.\\
+2.	First 4 characters and last 5 characters of entry number must be numbers.\\
+3.	5th and 6th characters of entry number must be alphabets. \\
+4.	Team name and registration of at least two members is mandatory. \\
+
+\pagebreak
+If a user does not follow any of the given rules, an error symbol will be displayed after clicking the ‘Register’ button. The user will get to know the error after tapping on that error symbol.
+\begin{figure}[H]
+	
+	\hspace*{3cm}\includegraphics[width=50mm,height=80mm,scale=0.5]{ferror.png}
+	\caption{Empty Field Error}
+\end{figure}
+\pagebreak
+If there is no data connection available and input is valid, the user will get an error message on clicking the “Register” button.
+\begin{figure}[H]
+	
+	\hspace*{3cm}\includegraphics[width=50mm,height=80mm,scale=0.5]{sdown.png}
+	\caption{No Connection Error}
+\end{figure}
+\pagebreak
+If data connection is available, all the input fields are correctly filled and the server is working correctly, the user will be able to register the team on tapping ‘Register’ button. The user will get a success message if registration is complete. If the registration with the same input was done earlier, the user will get an error message that the team was already registered. We have also implemented “throbber” which displays its own window while the server is processing client request.
+
+
+
+\par
+\raisebox{-.5\height}{\includegraphics[width=4cm]{success}}%
+\hfill
+\raisebox{-.5\height}{\includegraphics[width=4cm]{registered}}%
+\par
+
+\pagebreak
+
+\textbf{HELP ME}
+If the user does not know what’s going on or if he needs help then there is HELP ME button on the top left corner.
+\begin{figure}[H]
+	\hspace*{3cm}\includegraphics[width=50mm,height=80mm,scale=0.5]{help.png}
+	\caption{Help Me Window}
+	
+\end{figure}
+\pagebreak
+\textbf{ABOUT US}
+
+If the user wants to know more about us then there is an About Us button on the top right corner.
+\begin{figure}[H]
+	\hspace*{3cm}		\includegraphics[width=50mm,height=80mm,scale=0.5]{about.png}
+	\caption{About Us Window}
+	
+\end{figure}
+
+ 
+
+
+
+
+	
+\end{document}
